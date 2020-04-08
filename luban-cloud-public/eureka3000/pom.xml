@@ -9,20 +9,16 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>user</artifactId>
+    <groupId>luban-cloud-public</groupId>
+    <artifactId>eureka3000</artifactId>
 
     <dependencies>
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-
-        <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+            <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
         </dependency>
     </dependencies>
-
+<!--因为 eureka 本身不是属于 cloud 的，所以需要单独加入依赖-->
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -34,6 +30,4 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
-
-
 </project>

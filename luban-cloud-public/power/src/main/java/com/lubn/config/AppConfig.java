@@ -7,17 +7,17 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.client.RestTemplate;
 
 /**
- *  1. 给power 项目 自己配置一个 tomcat 设置端口号 为 6000， 避免使用xml
+ *  1. 给power 项目 自己配置一个 tomcat 设置端口号 为 600， 避免使用xml
  */
 @ComponentScan("com")
 @Configuration
 public class AppConfig {
 
 
-    @Bean
-    public TomcatServletWebServerFactory tomcat(){
-        TomcatServletWebServerFactory tomcat = new TomcatServletWebServerFactory();
-        tomcat.setPort(600);
-        return  tomcat;
-    }
+//    @Bean
+//    public TomcatServletWebServerFactory tomcat(){
+//        TomcatServletWebServerFactory tomcat = new TomcatServletWebServerFactory();
+//        tomcat.setPort(600);
+//        return  tomcat;
+//    }
 }

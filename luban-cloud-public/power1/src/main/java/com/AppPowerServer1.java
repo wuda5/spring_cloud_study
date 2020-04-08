@@ -5,13 +5,13 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 /**
- *  1. 给power 项目 自己配置一个 tomcat 设置端口号 为 600， 避免使用xml
+* 赋值了一份power 模拟集群--》设置端口为 601
  */
 @SpringBootApplication
 @EnableEurekaClient
-public class AppPowerServer {
+public class AppPowerServer1 {
 
     public static void main(String[] args) {
-        SpringApplication.run(AppPowerServer.class);
+        SpringApplication.run(AppPowerServer1.class);
     }
 }

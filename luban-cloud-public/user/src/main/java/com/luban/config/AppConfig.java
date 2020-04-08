@@ -20,11 +20,12 @@ public class AppConfig {
         return  new RestTemplate();
     }
 
+//    因为在配置文件中配置了port 了，就不需要用java配置
 
-    @Bean
-    public TomcatServletWebServerFactory tomcat(){
-        TomcatServletWebServerFactory tomcat = new TomcatServletWebServerFactory();
-        tomcat.setPort(5000);
-        return  tomcat;
-    }
+//    @Bean
+//    public TomcatServletWebServerFactory tomcat(){
+//        TomcatServletWebServerFactory tomcat = new TomcatServletWebServerFactory();
+//        tomcat.setPort(5000);
+//        return  tomcat;
+//    }
 }
