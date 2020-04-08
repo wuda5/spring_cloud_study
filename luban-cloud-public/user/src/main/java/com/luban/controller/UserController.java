@@ -38,4 +38,14 @@ public class UserController {
         return R.success("操作成功",restTemplate.getForObject("http://localhost:600/getPower.do",Object.class));
     }
 
+
+    /**
+     * 测试 微服务间通过 restTemplate 方式 + nginx 调用集群服务 --nginx 服务的端口是 80
+     * */
+    @RequestMapping("/getPower2.do")
+    public R getPowerForjiqun(){
+        System.out.println("user 请求到达--> 访问集群服务 通过 nginx 调用 /getPower.do");
+        return R.success("操作成功",restTemplate.getForObject("http://localhost:81/getPower.do",Object.class));
+    }
+
 }
